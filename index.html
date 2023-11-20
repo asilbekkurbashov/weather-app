@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Asilbek Project</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+      </div>
+      <ul class="play-list">
+        <audio src="./assets/sounds/Aqua Caelestis.mp3"></audio>
+        <li class="play-item">Aqua Caelestis</li>
+        <li class="play-item">River Flows In You</li>
+        <li class="play-item">Summer Wind</li>
+        <li class="play-item">Ennio Morricone</li>
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" placeholder="[City Name]" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"><p></p></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"><p></p></div>
+      <div class="humidity"><p></p></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time">
+      <p id="hour">00</p>
+      <p id="minute">00</p>
+      <p id="second">00</p>
+    </time>
+    <date class="date">
+      <p id="weekDay"></p>
+      <p id="month"></p>
+      <p id="day"></p>
+    </date>
+    <div class="greeting-container">
+      <span class="greeting" style="margin-left: 90px;">Good evening</span>
+      <input id="name" type="text" class="name" placeholder="[Enter Name]" />
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div><p class="quote" style="font-size: 18px;"></p></div>
+      <div ><p class="author" style="font-size: 20px;"></p></div>
+    </div>
+  </footer>
+  <script src="request.js"></script>
+  <script src="lesson18.js"></script>
+</body>
+</html>
